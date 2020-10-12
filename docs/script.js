@@ -29,8 +29,8 @@ const tl = gsap.timeline({
 
 tl.delay(1)
   .to(".ball", {
-    duration: 0.5,
-    ease: Elastic.easeOut.config(1, 0.3),
+    duration: 0.6,
+    ease: Elastic.easeOut.config(1.5, 0.5),
     css: {
       width: "0.5em",
       height: "0.5em"
