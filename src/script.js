@@ -1,5 +1,7 @@
 const background = getParameterByName('background');
 const theme = getParameterByName('theme');
+const title = getParameterByName('title');
+const subtitle = getParameterByName('subtitle');
 
 const lineColors = {
   yellow: 'hsl(48, 100%, 67%)',
@@ -17,6 +19,9 @@ if (theme === 'light') {
 }
 
 document.body.querySelector('#ball').style = `background: ${ _.sample(lineColors) }`;
+
+document.body.querySelector('#title').innerHTML = title || 'Among Us Gang';
+document.body.querySelector('#subtitle').innerHTML = subtitle || '@thatkookooguy';
 
 const tl = gsap.timeline({
   onComplete: hideTitle
