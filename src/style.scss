@@ -17,7 +17,6 @@ body {
 
   display: flex;
   align-items: flex-end;
-  // justify-content: center;
   font-size: 3em;
 
   &.background {
@@ -28,10 +27,13 @@ body {
     --background-color: white;
     --text-color: black;
   }
+
+  &.img .ball {
+    // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
 }
 
 .title {
-  // display: none;
   width: 100%;
   position: relative;
   padding: 0 0.9em;
@@ -60,7 +62,6 @@ body {
   bottom: 0;
   left: 0;
   width: 0.9em;
-  // background: pink;
 
   .ball {
     position: absolute;
@@ -69,12 +70,14 @@ body {
     left: 0;
     right: 0;
     // background: #db8a74;
-    background: hsl(48, 100%, 67%);
+    background-color: hsl(48, 100%, 67%);
     width: 0.5em;
     height: 0.5em;
     width: 0;
     height: 0;
     border-radius: 50%;
     margin: auto;
+    background-size: cover;
+    // background-position: center;
   }
 }

@@ -2,6 +2,7 @@ const background = getParameterByName('background');
 const theme = getParameterByName('theme');
 const title = getParameterByName('title');
 const subtitle = getParameterByName('subtitle');
+const img = getParameterByName('img');
 
 const lineColors = {
   yellow: 'hsl(48, 100%, 67%)',
@@ -19,6 +20,11 @@ if (theme === 'light') {
 }
 
 document.body.querySelector('#ball').style = `background: ${ _.sample(lineColors) }`;
+
+if (img) {
+  document.body.classList.add('img');
+  document.body.querySelector('#ball').style = `background-image: url(${ img })`;
+}
 
 document.body.querySelector('#title').innerHTML = title || 'Among Us Gang';
 document.body.querySelector('#subtitle').innerHTML = subtitle || '@thatkookooguy';
