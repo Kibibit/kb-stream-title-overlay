@@ -1,0 +1,60 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+body {
+  --background-color: transparent;
+  --text-color: white;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  align-items: flex-end;
+  font-size: 3em; }
+  body.background {
+    --background-color: #212121; }
+  body.light.background {
+    --background-color: white;
+    --text-color: black; }
+
+.title {
+  width: 100%;
+  position: relative;
+  padding: 0 0.9em;
+  overflow: hidden;
+  margin: 0.3em 0; }
+  .title .words {
+    overflow: hidden;
+    width: 0; }
+
+.title-word {
+  width: 100vw;
+  font-weight: 300;
+  font-size: 0.8em; }
+  .title-word.main {
+    font-size: 1em;
+    font-weight: bold; }
+
+.bar-animation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.9em; }
+  .bar-animation .ball {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffdd57;
+    width: 0.5em;
+    height: 0.5em;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin: auto; }

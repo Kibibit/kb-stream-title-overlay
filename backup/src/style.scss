@@ -1,0 +1,69 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #212121;
+  // background: transparent;
+  color: white;
+  font-family: "Comfortaa", cursive;
+
+  display: flex;
+  align-items: flex-end;
+  // justify-content: center;
+  font-size: 3em;
+}
+
+.title {
+  // display: none;
+  width: 100%;
+  position: relative;
+  padding: 0 0.9em;
+  overflow: hidden;
+  margin: 0.3em 0;
+
+  .words {
+    overflow: hidden;
+    width: 0;
+  }
+}
+
+.title-word {
+  width: 100vw;
+  font-weight: 300;
+  font-size: 0.8em;
+  &.main {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+.bar-animation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.9em;
+  // background: pink;
+
+  .ball {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background: #db8a74;
+    background: hsl(48, 100%, 67%);
+    width: 0.5em;
+    height: 0.5em;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
