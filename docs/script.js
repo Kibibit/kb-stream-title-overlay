@@ -1,4 +1,5 @@
 const background = getParameterByName('background');
+const lineColor = getParameterByName('line');
 const theme = getParameterByName('theme');
 const title = getParameterByName('title');
 const subtitle = getParameterByName('subtitle');
@@ -19,7 +20,7 @@ if (theme === 'light') {
   document.body.classList.add('light');
 }
 
-document.body.querySelector('#ball').style = `background: ${ _.sample(lineColors) }`;
+document.body.querySelector('#ball').style = `background: ${ lineColor || _.sample(lineColors) }`;
 
 if (img) {
   document.body.classList.add('img');
